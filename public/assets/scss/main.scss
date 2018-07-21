@@ -1,0 +1,15 @@
+@charset "UTF-8";
+// ========= 客製化區 =========
+@import 'custom_style/variables'; // 變數
+@import 'custom_style/font'; // landing page layout
+// ========= base =========
+@import 'base/reset'; // doppler reset
+@import 'base/dophlex'; // dopplex
+// ========= element =========
+@import 'element/btn'; // btn & calltoaction
+
+* {
+  font-family: $p200;
+  font-weight: 200;
+  position: relative;
+}

@@ -206,6 +206,23 @@ a {
   position: relative;
   -webkit-font-smoothing: antialiased; }
 
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  border-radius: 10px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }
+
 img {
   width: 100%; }
 
@@ -535,8 +552,15 @@ section .content {
   color: #d4d4d4;
   min-height: 0; }
 
+.sec6 .content {
+  width: calc(100% - 250px);
+  margin-left: 250px; }
+
 .sec6-function {
-  margin-top: 90px; }
+  margin-top: 90px;
+  position: absolute;
+  left: auto;
+  top: auto; }
 
 .sec6-function .time {
   background-color: #fff;
@@ -665,9 +689,8 @@ section .content {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-transform: translateY(-230px);
-  -ms-transform: translateY(-230px);
-  transform: translateY(-230px); }
+  margin-top: -230px;
+  padding-bottom: 50px; }
 
 .sec8 .article:nth-of-type(1) {
   margin-left: 52.5%; }
@@ -699,7 +722,9 @@ section .content {
     text-align: right; }
   .sec8 .article .title {
     font-size: 20px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    text-align: left;
+    margin-top: 15px; }
   .sec8 .article .who {
     font-size: 15px;
     text-align: right;
@@ -748,6 +773,7 @@ footer {
 
 #pop-box {
   position: fixed;
+  display: none;
   left: 70px;
   top: 0;
   width: calc(100% - 70px);
@@ -759,17 +785,118 @@ footer {
   #pop-box .close {
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 55px;
     cursor: pointer;
     font-family: 'Vollkorn', serif;
     font-size: 20px;
     z-index: 2; }
   #pop-box .pop-content {
+    display: none;
     width: 95%;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding: 50px 0;
     max-width: 700px; }
     #pop-box .pop-content h2 {
       font-family: 'Vollkorn', serif;
       color: #806239;
       font-size: 100px;
+      text-align: left; }
+    #pop-box .pop-content .table-content {
+      padding: 0 30px 0 0;
+      height: calc(100vh - 200px);
+      overflow: auto;
+      -webkit-overflow-scrolling: touch; }
+  #pop-box .table {
+    margin-bottom: 40px; }
+    #pop-box .table .title {
+      padding-bottom: 16px;
+      margin-bottom: 16px;
+      -webkit-box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5);
+      box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.5); }
+    #pop-box .table b {
+      font-family: 'Vollkorn', serif; }
+    #pop-box .table .row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-bottom: 5px; }
+    #pop-box .table .price {
+      color: #806239;
+      font-family: 'Vollkorn', serif; }
+
+.article-content {
+  padding-top: 80px;
+  max-width: 400px;
+  margin: auto; }
+  .article-content h3 {
+    font-size: 18px;
+    margin-bottom: 35px; }
+  .article-content p {
+    font-size: 14px;
+    line-height: 1.9; }
+
+.step-card {
+  background-color: #fff;
+  width: 47.5%;
+  max-width: 300px;
+  font-size: 0;
+  text-align: center;
+  position: relative;
+  margin: 0 0 0 auto;
+  margin-top: -25%;
+  opacity: .3; }
+  .step-card:nth-of-type(1) {
+    margin-top: 0; }
+  .step-card:nth-of-type(2n) {
+    margin: 0 auto 0 0;
+    margin-top: -25%; }
+
+.step-card.active {
+  opacity: 1; }
+
+.step-card-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2; }
+  .step-card-head .icon {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 70px;
+    flex: 0 0 70px;
+    width: 70px;
+    height: 70px;
+    padding-top: 16px;
+    background-color: #152138;
+    color: #fff;
+    font-size: 21px;
+    text-align: center;
+    line-height: 1;
+    font-family: 'Vollkorn', serif; }
+  .step-card-head .text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: auto;
+    padding: 10px 20px; }
+    .step-card-head .text h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: left; }
+    .step-card-head .text p {
+      font-size: 13px;
       text-align: left; }

@@ -299,6 +299,12 @@ header {
   background-size: cover;
   background-position: center bottom;
 
+  @media screen and (max-width: 992px) {
+    h2 {
+      background-attachment: scroll;
+    }
+  }
+
   h2 {
     position: absolute;
     left: 43px;

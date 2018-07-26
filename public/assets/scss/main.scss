@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
 @import url('https://fonts.googleapis.com/css?family=Vollkorn:400i');
 
-* {
+*:not(i) {
   font-family: 'Noto Sans TC', sans-serif;
   // font-family: $p200;
   font-weight: 300;
@@ -52,6 +52,64 @@ body {
   overflow-x: hidden;
   padding-left: 75px;
   background-color: $gray;
+
+  @media screen and (max-width: 992px) {
+    padding-left: 0;
+  }
+}
+
+nav#mb-nav {
+  display: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  
+  nav#mb-nav {
+    position: fixed;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 33;
+
+    .logo {
+      height: 40px;
+      width: 40px;
+      padding: 3px;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+
+  }
+
+  #mb-nav-list {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    height: calc( 100vh - 40px );
+    color: $sup;
+    z-index: 33;
+    background-color: $db;
+
+    a {
+      display: block;
+      margin: 0 auto;
+      font-family: 'Vollkorn', serif;
+      font-size: 50px;
+      text-align: center;
+      padding: 7px 0;
+    }
+  }
 }
 
 nav#nav {
@@ -67,6 +125,10 @@ nav#nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
 
   .logo {
     flex: 0 0 auto;
@@ -189,6 +251,9 @@ section {
   padding: 0 43px;
   min-height: 100vh;
   color: $b;
+  @media screen and (max-width: 992px) {
+    padding: 0 5px;
+  }
 
   h2 {
     position: relative;
@@ -201,6 +266,10 @@ section {
     max-width: 1200px;
     width: 100%;
     margin: 50px auto 0;
+
+    @media screen and (max-width: 992px) {
+      font-size: 50px;
+    }
   }
 
   .content {
@@ -239,6 +308,10 @@ header {
     font-family: 'Vollkorn', serif;
     color: $b;
     font-size: 23px;
+
+    @media screen and (max-width: 992px) {
+      color: #fff;
+    }
   }
 }
 
@@ -327,10 +400,11 @@ section .content {
 
 .sec3,
 .sec4 {
+  min-height: 0;
   color: $gray;
 
   .content {
-    max-width: 100%;
+    max-width: 1200px;
     padding-top: 10%;
   }
 
@@ -340,6 +414,10 @@ section .content {
 
   .right {
     padding: 5%;
+
+    @media screen and (max-width: 992px) {
+      padding: 0;
+    }
   }
 
   h4 {
@@ -355,6 +433,11 @@ section .content {
     position: relative;
     width: 115%;
     left: -7.5%;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      left: 0;
+    }
   }
 }
 
@@ -393,6 +476,10 @@ section .content {
   z-index: -1;
   width: 100%;
   height: 20%;
+
+  @media screen and (max-width: 992px) {
+    height: 35px;
+  }
 }
 
 .sec5 {
@@ -404,7 +491,11 @@ section .content {
 .sec6 .content {
   width: calc(100% - 250px);
   margin-left: 250px;
-
+  
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .sec6-function {
@@ -412,6 +503,10 @@ section .content {
   position: absolute;
   left: auto;
   top: auto;
+
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
 }
 
 .sec6-function .time {
@@ -530,10 +625,18 @@ section .content {
   flex-wrap: wrap;
   margin-top: -230px;
   padding-bottom: 50px;
+
+  @media screen and (max-width: 992px) {
+    margin-top: 10px;
+  }
 }
 
 .sec8 .article:nth-of-type(1) {
   margin-left: 52.5%;
+
+  @media screen and (max-width: 992px) {
+    margin-left: 0%;
+  }
 }
 
 .sec8 .article {
@@ -541,6 +644,14 @@ section .content {
   width: 45%;
   margin: 2.5%;
   float: left;
+
+  @media screen and (max-width: 992px) {
+    display: block;
+    float: none;
+    width: 100%;
+    flex: 0 0 100%;
+    margin: 10px auto;
+  }
 
   .img {
     width: 100%;
@@ -617,6 +728,12 @@ section .content {
 
 footer {
   padding-bottom: 5%;
+  
+  @media screen and (max-width: 992px) {
+    h2 {
+      font-size: 50px!important;
+    }
+  }
 
   .content {
     color: $b;
@@ -625,6 +742,13 @@ footer {
     top: 30px;
     width: calc(100% - 450px);
     margin: 0 0 0 auto;
+
+    @media screen and (max-width: 992px) {
+      position: relative;
+      width: 100%;
+      top: 0;
+      padding-bottom: 50px;
+    }
 
     span {
       font-family: 'Vollkorn', serif;
@@ -735,14 +859,30 @@ footer {
   margin: 0 0 0 auto;
   margin-top: -25%;
   opacity: .3;
+  position: relative;
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+    max-width: 100%;
+  }
 
   &:nth-of-type(1) {
     margin-top: 0;
+
+    @media screen and (max-width: 992px) {
+      margin-top: 20px;
+    }
   }
 
   &:nth-of-type(2n) {
-    margin: 0 auto 0 0;
+    margin: 0 0 0 auto;
     margin-top: -25%;
+    transform: translateX(calc(-100% - 20px));
+
+    @media screen and (max-width: 992px) {
+      margin-top: 20px;
+      transform: translateX(calc(0%));
+    }
   }
 }
 

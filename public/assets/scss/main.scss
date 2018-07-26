@@ -300,9 +300,7 @@ header {
   background-position: center bottom;
 
   @media screen and (max-width: 992px) {
-    h2 {
-      background-attachment: scroll;
-    }
+    background-attachment: scroll;
   }
 
   h2 {

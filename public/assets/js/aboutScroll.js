@@ -25,7 +25,6 @@ $ (document).ready (function () {
   });
 
   var sec6ToTop = $ ('.sec6-function').offset ().top;
-  var sec6Height = $ ('.sec6-function').height ();
   $ (window).bind ('resize scroll', function () {
     var toTopD = $ (this).scrollTop ();
     

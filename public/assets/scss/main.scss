@@ -68,6 +68,9 @@ nav#mb-nav {
 }
 
 @media screen and (max-width: 992px) {
+  #mb-nav-list.active {
+    display: block;
+  }
   
   nav#mb-nav {
     position: fixed;
@@ -283,6 +286,7 @@ section {
   color: $b;
   @media screen and (max-width: 992px) {
     padding: 0 5px;
+    min-height: 100vh;
   }
 
   h2 {
@@ -299,6 +303,7 @@ section {
 
     @media screen and (max-width: 992px) {
       font-size: 50px;
+      padding: 0 5%;
     }
   }
 
@@ -331,6 +336,7 @@ header {
 
   @media screen and (max-width: 992px) {
     background-attachment: scroll;
+    min-height: 100vh;
   }
 
   h2 {
@@ -345,6 +351,7 @@ header {
 
     @media screen and (max-width: 992px) {
       color: #fff;
+      left: 5%;
     }
   }
 }
@@ -749,6 +756,10 @@ section .content {
   min-height: 0;
   text-align: center;
 
+  @media screen and (max-width: 992px) {
+    padding: 60px 5% 30px;
+  }
+
   h2 {
     margin: 0 auto 10px;
     color: $gray;
@@ -778,6 +789,7 @@ footer {
   padding-bottom: 5%;
   
   @media screen and (max-width: 992px) {
+    padding: 30px 5%;
     h2 {
       font-size: 50px!important;
     }
@@ -822,6 +834,11 @@ footer {
   height: 100vh;
   z-index: 32;
   color: $gray;
+
+  @media screen and (max-width: 992px) {
+    left: 0;
+    width: 100%;
+  }
 
   .close {
     position: absolute;

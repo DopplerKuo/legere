@@ -22,3 +22,9 @@ $(window).load(function() {
     $('#mb-nav-list').toggleClass('active');
   })
 });
+
+$('<img/>').attr('src', 'assets/img/main/header.png').on('load', function() {
+   $(this).remove(); // prevent memory leaks as @benweet suggested
+   $('.main-bg').addClass('active')
+   $('.main-bg.active div').css('background-image', 'url("assets/img/main/header.png")');
+});

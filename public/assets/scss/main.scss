@@ -63,6 +63,10 @@ nav#mb-nav {
   background-color: transparent;
 }
 
+#mb-nav-list {
+  display: none;
+}
+
 @media screen and (max-width: 992px) {
   
   nav#mb-nav {
@@ -87,11 +91,37 @@ nav#mb-nav {
       }
     }
 
+    .calltoaction {
+      width: 120px;
+      line-height: 20px;
+      font-size: 13px;
+      box-shadow: inset 0 0 0 1px #fff;
+      text-align: center;
+      color: #fff;
+      border-radius: 0;
+      font-weight: 600;
+    }
 
+    .menu-btn {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+      i {
+        color: #fff;
+        display: none;
+      }
+
+      i.active {
+        display: block;
+      }
+    }
   }
 
   #mb-nav-list {
-    display: none;
     position: fixed;
     width: 100%;
     top: 40px;
@@ -249,7 +279,7 @@ header,
 section {
   position: relative;
   padding: 0 43px;
-  min-height: 100vh;
+  min-height: 900px;
   color: $b;
   @media screen and (max-width: 992px) {
     padding: 0 5px;
@@ -362,6 +392,13 @@ header {
     width: 1px;
     height: 63px;
     background-color: #fff;
+    animation: bling 1.5s ease 0s infinite both;
+    @keyframes bling {
+      0% { opacity: 0; bottom: -60px;}
+      50% { opacity: 1;}
+      99% { opacity: 0; bottom: -80px;}
+      100% { opacity: 0; bottom: -60px;}
+    }
   }
 
   &:before {
@@ -380,6 +417,7 @@ section .content {
   background-image: url('../img//main/bg.png');
   background-repeat: repeat;
   background-size: 300px;
+  min-height: 700px!important;
 
   .content {
     & > div {
@@ -592,6 +630,7 @@ section .content {
 
 .sec7 .content {
   margin-top: 90px;
+  max-width: 1200px;
 }
 
 .sec7 .box {
@@ -600,6 +639,11 @@ section .content {
   margin: 0;
   flex: 0 0 20%;
   background-size: cover;
+
+  @media screen and (max-width: 992px) {
+    flex: 0 0 50%;
+    padding-top: 50%;
+  }
 }
 
 .sec7 .btn {
@@ -706,7 +750,7 @@ section .content {
   text-align: center;
 
   h2 {
-    margin: 0 0 10px;
+    margin: 0 auto 10px;
     color: $gray;
     text-align: center;
   }
@@ -745,7 +789,8 @@ footer {
     right: 0;
     top: 30px;
     width: calc(100% - 450px);
-    margin: 0 0 0 auto;
+    margin: 0 50px 0 auto;
+    max-width: 800px;
 
     @media screen and (max-width: 992px) {
       position: relative;
@@ -864,6 +909,7 @@ footer {
   margin-top: -25%;
   opacity: .3;
   position: relative;
+  transition: 0.3s ease;
 
   @media screen and (max-width: 992px) {
     width: 100%;

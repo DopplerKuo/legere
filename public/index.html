@@ -15,7 +15,7 @@
   <link href="assets/img/common/favicon.jpg" rel="shortcut icon">
   <link rel="stylesheet" href="/assets/css/main.css">
   <script type="text/javascript">var _jf = _jf || []; _jf.push(['p', '55883']); _jf.push(['_setFont', 'notoserifcjktc_bold', 'css', '.notoserifcjktc_bold']); _jf.push(['_setFont', 'notoserifcjktc_bold', 'alias', 'notoserifcjktc']); _jf.push(['_setFont', 'notoserifcjktc_bold', 'weight', 700]); (function (f, q, c, h, e, i, r, d) { var k = f._jf; if (k.constructor === Object) { return } var l, t = q.getElementsByTagName("html")[0], a = function (u) { for (var v in k) { if (k[v][0] == u) { if (false === k[v][1].call(k)) { break } } } }, j = /\S+/g, o = /[\t\r\n\f]/g, b = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, g = "".trim, s = g && !g.call("\uFEFF\xA0") ? function (u) { return u == null ? "" : g.call(u) } : function (u) { return u == null ? "" : (u + "").replace(b, "") }, m = function (y) { var w, z, v, u, x = typeof y === "string" && y; if (x) { w = (y || "").match(j) || []; z = t[c] ? (" " + t[c] + " ").replace(o, " ") : " "; if (z) { u = 0; while ((v = w[u++])) { if (z.indexOf(" " + v + " ") < 0) { z += v + " " } } t[c] = s(z) } } }, p = function (y) { var w, z, v, u, x = arguments.length === 0 || typeof y === "string" && y; if (x) { w = (y || "").match(j) || []; z = t[c] ? (" " + t[c] + " ").replace(o, " ") : ""; if (z) { u = 0; while ((v = w[u++])) { while (z.indexOf(" " + v + " ") >= 0) { z = z.replace(" " + v + " ", " ") } } t[c] = y ? s(z) : "" } } }, n; k.push(["_eventActived", function () { p(h); m(e) }]); k.push(["_eventInactived", function () { p(h); m(i) }]); k.addScript = n = function (u, A, w, C, E, B) { E = E || function () { }; B = B || function () { }; var x = q.createElement("script"), z = q.getElementsByTagName("script")[0], v, y = false, D = function () { x.src = ""; x.onerror = x.onload = x.onreadystatechange = null; x.parentNode.removeChild(x); x = null; a("_eventInactived"); B() }; if (C) { v = setTimeout(function () { D() }, C) } x.type = A || "text/javascript"; x.async = w; x.onload = x.onreadystatechange = function (G, F) { if (!y && (!x.readyState || /loaded|complete/.test(x.readyState))) { y = true; if (C) { clearTimeout(v) } x.src = ""; x.onerror = x.onload = x.onreadystatechange = null; x.parentNode.removeChild(x); x = null; if (!F) { setTimeout(function () { E() }, 200) } } }; x.onerror = function (H, G, F) { if (C) { clearTimeout(v) } D(); return true }; x.src = u; z.parentNode.insertBefore(x, z) }; a("_eventPreload"); m(h); n(r, "text/javascript", false, 3000) })(this, this.document, "className", "jf-loading", "jf-active", "jf-inactive", "//ds.justfont.com/js/stable/v/5.0.3/id/251916704139");</script>
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
@@ -32,23 +32,23 @@
       <a href="#reservation"></a>
       <a href="#contact"></a>
     </div>
-    <div class="calltoaction">
+    <a href="#reservation" class="calltoaction">
       <div class="top">
         <b class="f-sf">Reservation</b>
         預約
       </div>
       <div class="btn"></div>
-    </div>
+    </a>
   </nav>
 
   <nav id="mb-nav">
     <div class="logo">
       <img src="assets/img/main/logo/logo.svg" alt="">
     </div>
-    <div class="calltoaction">預約</div>
+    <a href="#reservation" class="calltoaction">預約</a>
     <div class="menu-btn">
-      <i class="fal fa-bars active"></i>
-      <i class="fal fa-times"></i>
+      <i class="fas fa-bars active"></i>
+      <i class="fas fa-times"></i>
     </div>
   </nav>
 
@@ -63,7 +63,7 @@
   </div>
 
   <header>
-    <h2>
+    <h2 class="reveal">
       The Only
       <br> Customized
       <br> Menswear and
@@ -82,32 +82,32 @@
       </div>
       © LEGERE All rights reserved
     </div>
-    <div class="header-tip f-sf">
+    <div class="header-tip f-sf reveal">
       About
       <br/>LEGERE
     </div>
   </header>
 
   <section class="sec2" id="about">
-    <h2 class="section-title">About
+    <h2 class="section-title reveal">About
       <br>LEGERE</h2>
     <div class="content flex-l2-m1-ac-jc-">
       <div class="left">
-        <h3 class="notoserifcjktc_bold">
+        <h3 class="notoserifcjktc_bold reveal">
           台灣首創
           <br/> 提供造型穿搭的訂製西裝品牌
         </h3>
-        <h4>The Only Customized Suit and Wardrobe Styling Brand</h4>
+        <h4 class="reveal">The Only Customized Suit and Wardrobe Styling Brand</h4>
       </div>
-      <div class="right">
+      <div class="right reveal">
         <p>里格，創立於2017年。採用百年義大利布廠高級天然布料，世界 一線男裝品牌製作工藝，輔以一次量身到位的嶄新訂製體驗，堅 持為台灣男性打造涼爽舒適的高品質服飾及配件;並提供專屬衣 櫃規劃師服務，規劃合宜穿搭及建構完整衣櫃。</p>
       </div>
     </div>
   </section>
 
   <section class="sec3" id="service">
-    <h2 class="section-title">SERVICE</h2>
-    <div class="content flex-l2-m1-ac-jsb-">
+    <h2 class="section-title reveal">SERVICE</h2>
+    <div class="content flex-l2-m1-ac-jsb- reveal">
       <div class="left">
         <img src="assets/img/main/3_bg.png" alt="">
       </div>
@@ -121,7 +121,7 @@
 
 
   <section class="sec4">
-    <div class="content flex-l2-m1-ac-jsb-">
+    <div class="content flex-l2-m1-ac-jsb- reveal">
       <div class="left">
         <h4>Wardrobe Styling</h4>
         <h3 class="notoserifcjktc_bold">衣櫃規劃</h3>
@@ -136,18 +136,18 @@
   <section class="sec5">
     <div class="content flex-l2-m1-ac-jsb-">
       <div class="left">
-        <h4>Courses</h4>
-        <h3>應用課程</h3>
-        <p> 各式應用課程，包括「如何穿好西 裝」、「男裝搭配教學」、「看場合穿 衣服」、「生活美學」、「戀愛養成全 攻略」、「促進成交」、「營業額快速 增長法」等</p>
+        <h4 clasa="reveal">Courses</h4>
+        <h3 clasa="reveal">應用課程</h3>
+        <p clasa="reveal">各式應用課程，包括「如何穿好西 裝」、「男裝搭配教學」、「看場合穿 衣服」、「生活美學」、「戀愛養成全 攻略」、「促進成交」、「營業額快速 增長法」等</p>
       </div>
-      <div class="right">
+      <div class="right reveal">
         <img src="assets/img/main/5_right.png" alt="">
       </div>
     </div>
   </section>
 
   <section class="sec6" id="process">
-    <h2>Service
+    <h2 clasa="reveal">Service
       <br>PROCESS</h2>
     <div class="sec6-function">
       <div class="time">

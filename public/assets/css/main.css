@@ -977,10 +977,10 @@ section .content {
   @media screen and (max-width: 992px) {
     .sec7 .box {
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 230px;
-      flex: 0 0 230px;
+      -ms-flex: 0 0 67%;
+      flex: 0 0 67%;
       margin-right: 5px;
-      padding-top: 230px; } }
+      padding-top: 67%; } }
 
 .sec7 .btn {
   font-size: 17px;

@@ -49,25 +49,25 @@ $ (document).ready (function () {
         $ ('.step-card:nth-of-type(4)').addClass ('active');
         $ ('.step').removeClass ('active');
         $ ('.step:nth-of-type(4)').addClass ('active');
-        $('.sec6-function .time b').text(50)
+        $('.sec6-function .time b').text(45)
       } else if (toTopD >= $ ('.step-card:nth-of-type(3)').offset ().top - $ ('.step-card').height() / 2) {
         $ ('.step-card').removeClass ('active');
         $ ('.step-card:nth-of-type(3)').addClass ('active');
         $ ('.step').removeClass ('active');
         $ ('.step:nth-of-type(3)').addClass ('active');
-        $('.sec6-function .time b').text(40)
+        $('.sec6-function .time b').text(35)
       } else if (toTopD >= $ ('.step-card:nth-of-type(2)').offset ().top - $ ('.step-card').height() / 2) {
         $ ('.step-card').removeClass ('active');
         $ ('.step-card:nth-of-type(2)').addClass ('active');
         $ ('.step').removeClass ('active');
         $ ('.step:nth-of-type(2)').addClass ('active');
-        $('.sec6-function .time b').text(30)
+        $('.sec6-function .time b').text(20)
       } else if (toTopD >= $ ('.step-card:nth-of-type(1)').offset ().top - $ ('.step-card').height() / 2) {
         $ ('.step-card').removeClass ('active');
         $ ('.step-card:nth-of-type(1)').addClass ('active');
         $ ('.step').removeClass ('active');
         $ ('.step:nth-of-type(1)').addClass ('active');
-        $('.sec6-function .time b').text(20)
+        $('.sec6-function .time b').text(5)
       } else {
         $('.sec6-function .time b').text(0)
       }

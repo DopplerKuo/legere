@@ -501,7 +501,8 @@ section {
     font-family: 'Vollkorn', serif; }
   header p,
   section p {
-    font-size: 17px; }
+    font-size: 17px;
+    line-height: 1.7; }
 
 header .main-bg.active {
   position: absolute;
@@ -739,12 +740,16 @@ section .content {
   .sec4 .content {
     max-width: 1200px;
     padding-top: 10%; }
+    .sec3 .content p,
+    .sec4 .content p {
+      font-size: 18px;
+      max-width: 310px; }
   .sec3 .left,
   .sec4 .left {
     margin: 0 !important; }
   .sec3 .right,
   .sec4 .right {
-    padding: 5%; }
+    padding: 7% 1% 3% 9%; }
     @media screen and (max-width: 992px) {
       .sec3 .right,
       .sec4 .right {
@@ -802,6 +807,9 @@ section .content {
   background-color: #152138;
   color: #d4d4d4;
   min-height: 0; }
+  .sec5 p {
+    margin-top: 30px;
+    max-width: 310px; }
 
 .sec6 .content {
   width: calc(100% - 250px);
@@ -998,6 +1006,10 @@ section .content {
     text-align: left;
     width: 50%;
     font-family: 'Vollkorn', serif; }
+    .sec8 .article .chapter i,
+    .sec8 .article .date i {
+      margin-right: 5px;
+      font-size: 12px; }
   .sec8 .article .date {
     text-align: right; }
   .sec8 .article .title {
@@ -1072,7 +1084,7 @@ footer {
   left: 70px;
   top: 0;
   width: calc(100% - 70px);
-  background-color: #152138;
+  background-color: rgba(21, 33, 56, 0.95);
   width: 100%;
   height: 100vh;
   z-index: 32;
@@ -1101,6 +1113,7 @@ footer {
       font-size: 100px;
       text-align: left; }
     #pop-box .pop-content .table-content {
+      margin-top: 50px;
       padding: 0 30px 0 0;
       height: calc(100vh - 200px);
       overflow: auto;

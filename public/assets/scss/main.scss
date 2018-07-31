@@ -509,12 +509,12 @@ header {
   color: $b;
 
   @media screen and (max-width: 768px) {
-    color: #fff;
+    background-color: #fff;
     left: 0;
     bottom: 0;
     padding: 6px 14px 0px;
     z-index: 30;
-    background-color: $b;
+    color: $b;
     width: 100%;
     
     .top {

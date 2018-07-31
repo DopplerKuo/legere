@@ -652,12 +652,12 @@ header h2 {
   color: #152138; }
   @media screen and (max-width: 768px) {
     .social-icons {
-      color: #fff;
+      background-color: #fff;
       left: 0;
       bottom: 0;
       padding: 6px 14px 0px;
       z-index: 30;
-      background-color: #152138;
+      color: #152138;
       width: 100%; }
       .social-icons .top {
         display: inline-block; }

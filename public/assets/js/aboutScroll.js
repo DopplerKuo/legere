@@ -73,11 +73,11 @@ $ (document).ready (function () {
       }
     }
 
-    if ( toTopD <= $('.sec5').offset().top  ) {
+    if ( toTopD <= $('.sec6').offset().top  ) {
       $('.sec3 .left').css('transform', 'translateY(' +  (1 - (toTopD / $('.sec3 .left').offset ().top)) * 100 + '%)')
-      $('.sec4 .right').css('transform', 'translateY(' +  (1 - (toTopD / $('.sec3 .right').offset ().top)) * 80 + '%)')
-      $('.sec3 .right').css('transform', 'translateY(' +  (1 - (toTopD / $('.sec3 .left').offset ().top)) * 50 + '%)')
-      $('.sec4 .left').css('transform', 'translateY(' +  (1 - (toTopD / $('.sec3 .right').offset ().top)) * 50 + '%)')
+      $('.sec4 .right').css('transform', 'translateY(' +  (1 - (toTopD / $('.sec4 .right').offset ().top)) * 100 + '%)')
+      $('.sec3 .right').css('transform', 'translateY(' +  (1 - (toTopD / $('.sec3 .right').offset ().top)) * 50 + '%)')
+      $('.sec4 .left').css('transform', 'translateY(' +  (1 - (toTopD / $('.sec4 .left').offset ().top)) * 50 + '%)')
     }
 
     /// left nav a

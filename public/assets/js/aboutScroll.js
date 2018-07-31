@@ -1,3 +1,11 @@
+function readDeviceOrientation() {              		
+  if (($(window).width() === 768 ||  $(window).width() === 1024 ) && Math.abs(window.orientation) !== 90) {
+    $('#hv-tip').removeClass('v');
+  } else {
+    $('#hv-tip').addClass('v');
+  }
+}
+
 $ (document).ready (function () {
   // Add smooth scrolling to all links
   $ ('a').on ('click', function (event) {
@@ -26,6 +34,7 @@ $ (document).ready (function () {
 
   var sec6ToTop = $ ('.sec6-function').offset ().top;
   $ (window).bind ('resize scroll', function () {
+    readDeviceOrientation();
     var toTopD = $ (this).scrollTop ();
     
     /// sec6 function step card
@@ -73,10 +82,13 @@ $ (document).ready (function () {
       }
     }
 
-    if ( toTopD <= $('.sec6').offset().top  ) {
+    if ( toTopD <= $('.sec5').offset().top  ) {
       $('.sec3 .left').css('transform', 'translateY(' +  (1 - (toTopD / $('.sec3 .left').offset ().top)) * 100 + '%)')
-      $('.sec4 .right').css('transform', 'translateY(' +  (1 - (toTopD / $('.sec4 .right').offset ().top)) * 100 + '%)')
       $('.sec3 .right').css('transform', 'translateY(' +  (1 - (toTopD / $('.sec3 .right').offset ().top)) * 50 + '%)')
+    }
+
+    if ( toTopD <= $('.sec6').offset().top  ) {
+      $('.sec4 .right').css('transform', 'translateY(' +  (1 - (toTopD / $('.sec4 .right').offset ().top)) * 100 + '%)')
       $('.sec4 .left').css('transform', 'translateY(' +  (1 - (toTopD / $('.sec4 .left').offset ().top)) * 50 + '%)')
     }
 
@@ -109,7 +121,7 @@ $ (document).ready (function () {
       $('nav#nav .middle a').removeClass('active');
       $('nav#nav .middle a:nth-of-type(1)').addClass('active');
     }
-  });
+  }).resize();
 });
 
 

@@ -77,6 +77,10 @@ nav#mb-nav {
   background-color: transparent;
 }
 
+nav#mb-nav.active {
+  background-color: $db;
+}
+
 #mb-nav-list {
   display: none;
 }

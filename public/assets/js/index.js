@@ -15,11 +15,13 @@ $(window).load(function() {
   $('.menu-btn').click(function() {
     $('.menu-btn i').toggleClass('active');
     $('#mb-nav-list').toggleClass('active');
+    $('nav#mb-nav').toggleClass('active');
   })
 
   $('#mb-nav-list a').click(function() {
     $('.menu-btn i').toggleClass('active');
     $('#mb-nav-list').toggleClass('active');
+    $('nav#mb-nav').toggleClass('active');
   })
 });
 

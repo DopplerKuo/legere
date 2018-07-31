@@ -253,6 +253,9 @@ nav#mb-nav {
   display: none;
   background-color: transparent; }
 
+nav#mb-nav.active {
+  background-color: #0f1726; }
+
 #mb-nav-list {
   display: none; }
 

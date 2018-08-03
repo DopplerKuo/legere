@@ -1048,11 +1048,11 @@ section .content {
 .sec7 .btn {
   display: inline-block;
   font-size: 17px;
-  line-height: 63px;
+  line-height: 60px;
   height: 60px;
   width: 228px;
   margin: 40px 10px;
-  background-color: #806239;
+  background-color: #0f1726;
   color: #d4d4d4;
   font-family: mm, serif; }
   .sec7 .btn i {
@@ -1063,7 +1063,7 @@ section .content {
       margin: 15px auto; } }
 
 .sec7 .btn:nth-of-type(2) {
-  background-color: #0f1726; }
+  background-color: #806239; }
   @media screen and (max-width: 768px) {
     .sec7 .btn:nth-of-type(2) {
       margin: 35px auto 0; } }

@@ -956,11 +956,11 @@ section .content {
 
   display: inline-block;
   font-size: 17px;
-  line-height: 63px;
+  line-height: 60px;
   height: 60px;
   width: 228px;
   margin: 40px 10px;
-  background-color: $sup;
+  background-color: $db;
   color: $gray;
   font-family: mm, serif;
 
@@ -970,7 +970,7 @@ section .content {
 }
 
 .sec7 .btn:nth-of-type(2) {
-  background-color: $db;
+  background-color: $sup;
   @media screen and (max-width: 768px) {
     margin: 35px auto 0;
   }

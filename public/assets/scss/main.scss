@@ -474,6 +474,8 @@ header .main-bg.active {
 }
 
 header {
+  position: relative;
+  z-index: 10;
   @media screen and (max-width: 768px) {
     min-height: 100vh;
     background-attachment: scroll;

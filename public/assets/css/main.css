@@ -622,16 +622,22 @@ header .main-bg.active {
 header {
   position: relative;
   z-index: 10; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     header {
       min-height: 100vh;
-      background-attachment: scroll;
+      background-attachment: scroll !important;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center bottom;
+      background-position: 30% bottom;
       background-image: url("../img/main/header.png"); }
       header .main-bg {
         display: none; } }
+  @media screen and (max-width: 900px) {
+    header {
+      background-position: 20% bottom; } }
+  @media screen and (max-width: 768px) {
+    header {
+      background-position: center bottom; } }
   header h2 {
     position: absolute;
     left: 43px;
